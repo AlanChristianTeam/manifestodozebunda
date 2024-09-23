@@ -20,11 +20,15 @@ margin-bottom:2%;
 }
 h2{ text-align:center; padding:20px;    transform: skew(-20deg);
 }
-#coments{ margin:2% 20% 5% 20%;  }
-  body {
-    margin: 0;
-    overflow: hidden;
-   
+.titledois{
+ color:white;
+  
+}  
+@keyframes titledois {
+    0% { color:white; }
+    5%{color:green;}
+    30%{color:#ffb900;}
+    100% { color:white; }
 }
 body{
  background-image:url('estrela.png');
@@ -56,7 +60,7 @@ body{
 <body style="background-color:green;font-family: Tahoma;">
 
 <header style="width:80%; height:120px; background-color:#171789;transform: skew(40deg);     margin: 1% 0px 0 10%;">
-<h2 ><marquee behavior="scroll" direction="left">O MAIOR MANIFESTO REVOLUCIONÁRIO DA INDÚSTRIA DA TECNOLOGIA</marquee> </h2>
+<h2 class="titledois"><marquee behavior="scroll" direction="left">O MAIOR MANIFESTO REVOLUCIONÁRIO DA INDÚSTRIA DA TECNOLOGIA</marquee> </h2>
 </header>
 
 <article style="width:50%; height:50%; background-color:#ffb900; margin:5% 50% 5% 20%;display:inline-table; text-align:center; padding:5%;border-radius:10%;border-top: 8px #171789 solid;">
