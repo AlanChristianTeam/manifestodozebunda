@@ -44,12 +44,13 @@ body{
     overflow: hidden;
     white-space: nowrap;
     box-sizing: border-box;
-    color:white;
+   
+    animation-name: marquee;
+  animation-duration: 3s;
+ animation-iteration-count: infinite;
 }
 @keyframes marquee {
     0% { transform: translateX(0); }
-    5%{color:green;}
-    30%{color:#ffb900;}
     100% { transform: translateX(-100%); }
 }
 
