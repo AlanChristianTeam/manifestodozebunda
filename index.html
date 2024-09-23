@@ -20,8 +20,46 @@ margin-bottom:2%;
 }
 h2{ text-align:center; color:white; padding:20px;}
 #coments{ margin:2% 20% 5% 20%;  }
-  
+  body {
+    margin: 0;
+    overflow: hidden;
+   
+}
+
+#star-field {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.star {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0 10px white;
+}
+
 </style>
+<script>
+function createStar() {
+    const star = document.createElement('div');
+    star.classList.add('star');
+    
+    const size = Math.random() * 3;
+    star.style.width = `${size}px`;
+    star.style.height = `${size}px`;
+    
+    star.style.top = `${Math.random() * window.innerHeight}px`;
+    star.style.left = `${Math.random() * window.innerWidth}px`;
+    
+    document.getElementById('star-field').appendChild(star);
+}
+
+for (let i = 0; i < 100; i++) {
+    createStar();
+}
+</script>
+  
 </head>
 
 
